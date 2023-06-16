@@ -13,12 +13,13 @@
   </div>
 
 <!--Service Cards -->
-
-<div class="row" >
-  <?php foreach($serviceCards as $key => $service) {
+  <section id="service_cards" class="service_cards">
+    <div class="row" >
+      <?php foreach($serviceCards as $key => $service) {
         include('templates/service-cards.php');
       } ?>
-    </div>
+  </div>
+</section>
 
     <?php require_once("templates/footer.php"); ?>
 

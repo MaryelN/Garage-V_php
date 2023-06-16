@@ -26,3 +26,10 @@ $openHours = [
   ['day' =>'Vendredi', 'am' => '09:00-12:00', 'pm' => '14:00-18:00'],
   ['day' =>'Samedi', 'am' => '09:00-12:00', 'pm' => '']
 ];
+
+$mainMenu = [
+  'index.php' => 'Accueil',
+  'services.php' => 'Services',
+  'catalogue.php' => ' Vente de Voitures',
+  'contact.php' => ' Contact'
+];
