@@ -3,21 +3,27 @@
 
 <!--Hero-->
 
-  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-    <div class="col-lg-6">
-      <h1 class="display-5 fw-bold lh-1 mb-3">A la recherche du bon service de réparation mécanique ?</h1>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">CONTACTER</button>
+<section class="">
+      <div class="container pt-4 pt-xl-5" style="height: 580px;">
+          <div class="row g-0 pt-5" style="margin-bottom: 0px;padding-bottom: 0px;padding-top: 24px;margin-top: 37px;margin-left: -38px;padding-left: 0px;padding-right: 0px;margin-right: 122px;">
+              <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto" style="padding-left: 0px;margin-left: -39px;padding-right: 0px;">
+                  <div class="text-center">
+                      <h1 class="fw-bold" style="text-align: left;padding: 0px;margin: 0px;margin-right: 10px;padding-left: 18px;margin-left: 15px;">A la recherche du bon service de réparation mécanique ?<br /><br /></h1><button class="btn btn-primary" type="button" style="padding-top: 10px;margin-bottom: 46px;margin-top: 42px;margin-left: 20px;margin-right: 20px;">CONTACTER</button>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-  </div>
+  </section>
 
 <!--Service Cards -->
-  <section id="service_cards" class="service_cards">
-    <div class="row" >
-      <?php foreach($serviceCards as $key => $service) {
-        include('templates/service-cards.php');
-      } ?>
+  <section class="service_cards container-fluid">
+    <div class="container text-center">
+      <div class="row">
+        <?php foreach($serviceCards as $key => $service) {
+          include('templates/service-cards.php');
+        } ?>
+      </div>
+    </div>
   </div>
 </section>
 
