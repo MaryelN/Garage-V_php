@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:active {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+.card {
+height: 336px;
+width: 305px;
+}

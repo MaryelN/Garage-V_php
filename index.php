@@ -1,40 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <title>Document</title>
-</head>
-<body>
-<header>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand ms-3" href="#"><img src="assets/images/Logo.png" alt="Logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link mx-3 active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-3" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link mx-3" href="#">Link</a>
-        </li>
-      </ul>
-        <button class="btn btn-outline-success mx-3" type="submit">Search</button>
-      
+<?php require_once("libraries/config.php"); ?>
+<?php require_once("templates/header.php"); ?>
+
+<!--Hero-->
+
+<section class="">
+      <div class="container pt-4 pt-xl-5" style="height: 580px;">
+          <div class="row g-0 pt-5" style="margin-bottom: 0px;padding-bottom: 0px;padding-top: 24px;margin-top: 37px;margin-left: -38px;padding-left: 0px;padding-right: 0px;margin-right: 122px;">
+              <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto" style="padding-left: 0px;margin-left: -39px;padding-right: 0px;">
+                  <div class="text-center">
+                      <h1 class="fw-bold" style="text-align: left;padding: 0px;margin: 0px;margin-right: 10px;padding-left: 18px;margin-left: 15px;">A la recherche du bon service de réparation mécanique ?<br /><br /></h1><button class="btn btn-primary" type="button" style="padding-top: 10px;margin-bottom: 46px;margin-top: 42px;margin-left: 20px;margin-right: 20px;">CONTACTER</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<!--Service Cards -->
+  <section class="service_cards container-fluid">
+    <div class="container text-center">
+      <div class="row">
+        <?php foreach($serviceCards as $key => $service) {
+          include('templates/service-cards.php');
+        } ?>
+      </div>
     </div>
   </div>
-</nav>
+</section>
 
-</header>
-
+    <?php require_once("templates/footer.php"); ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
